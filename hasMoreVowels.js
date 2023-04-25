@@ -39,6 +39,32 @@ console.log(switcheroo(array))
 // hasMoreVowels('Aal')
 // // true
 
+word = word.toLowerCase
+
+let vowelCount = 0
+let nonVowelCount = 0
+for (let i = 0; i < word.length; i++) {
+    let curChar = word [i]
+    if (curChar === 'a' ||
+    curChar === 'e' ||
+    curChar === 'i' ||
+    curChar === 'o' ||
+    curChar === 'u'
+    ) {
+        vowelCount++
+    } else {
+        nonVowelCount++
+    }
+    }
+if (vowelCount > nonVowelCount) {
+    return true
+} else {
+return false
+}
+
+console.log(hasMoreVowels('monday)'))
+
+
 function hasMoreVowels(word) {
 
     //what are vowels? the characters:
